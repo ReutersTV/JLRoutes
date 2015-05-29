@@ -15,7 +15,7 @@
 		5D33683116C6DC9300F983AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D33682F16C6DC9300F983AA /* InfoPlist.strings */; };
 		5D33683416C6DC9300F983AA /* JLRoutesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D33683316C6DC9300F983AA /* JLRoutesTests.m */; };
 		C14FA8211B18B3DA00143FC8 /* JLRoutes-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C14FA8201B18B3DA00143FC8 /* JLRoutes-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C14FA8271B18B3DA00143FC8 /* JLRoutes-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14FA81C1B18B3DA00143FC8 /* JLRoutes-iOS.framework */; };
+		C14FA8271B18B3DA00143FC8 /* JLRoutes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14FA81C1B18B3DA00143FC8 /* JLRoutes.framework */; };
 		C14FA82E1B18B3DA00143FC8 /* JLRoutes_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C14FA82D1B18B3DA00143FC8 /* JLRoutes_iOSTests.m */; };
 		C14FA8351B18B3E200143FC8 /* JLRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D33681C16C6DC9300F983AA /* JLRoutes.m */; };
 		C14FA8361B18B3E800143FC8 /* JLRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D33681A16C6DC9300F983AA /* JLRoutes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,7 +51,7 @@
 		5D33683216C6DC9300F983AA /* JLRoutesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRoutesTests.h; sourceTree = "<group>"; };
 		5D33683316C6DC9300F983AA /* JLRoutesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRoutesTests.m; sourceTree = "<group>"; };
 		5D33684416C6DCCC00F983AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C14FA81C1B18B3DA00143FC8 /* JLRoutes-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "JLRoutes-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14FA81C1B18B3DA00143FC8 /* JLRoutes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JLRoutes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14FA81F1B18B3DA00143FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C14FA8201B18B3DA00143FC8 /* JLRoutes-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLRoutes-iOS.h"; sourceTree = "<group>"; };
 		C14FA8261B18B3DA00143FC8 /* JLRoutes-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JLRoutes-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C14FA8271B18B3DA00143FC8 /* JLRoutes-iOS.framework in Frameworks */,
+				C14FA8271B18B3DA00143FC8 /* JLRoutes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			children = (
 				5D33681216C6DC9300F983AA /* libJLRoutes.a */,
 				5D33682316C6DC9300F983AA /* JLRoutesTests.xctest */,
-				C14FA81C1B18B3DA00143FC8 /* JLRoutes-iOS.framework */,
+				C14FA81C1B18B3DA00143FC8 /* JLRoutes.framework */,
 				C14FA8261B18B3DA00143FC8 /* JLRoutes-iOSTests.xctest */,
 			);
 			name = Products;
@@ -265,7 +265,7 @@
 			);
 			name = "JLRoutes-iOS";
 			productName = "JLRoutes-iOS";
-			productReference = C14FA81C1B18B3DA00143FC8 /* JLRoutes-iOS.framework */;
+			productReference = C14FA81C1B18B3DA00143FC8 /* JLRoutes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C14FA8251B18B3DA00143FC8 /* JLRoutes-iOSTests */ = {
@@ -567,7 +567,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "JLRoutes-iOS";
+				PRODUCT_NAME = JLRoutes;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -604,7 +604,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "JLRoutes-iOS";
+				PRODUCT_NAME = JLRoutes;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -713,6 +713,7 @@
 				C14FA8301B18B3DA00143FC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C14FA8341B18B3DA00143FC8 /* Build configuration list for PBXNativeTarget "JLRoutes-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +722,7 @@
 				C14FA8321B18B3DA00143FC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
